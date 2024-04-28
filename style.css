@@ -144,6 +144,16 @@ select {
   text-align: center;
   margin-top: 2rem;
 }
+.img{
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+.rotate{
+  rotate: 360deg;
+}
 .convert-btn {
   padding: 1rem 3rem;
   color: #fff;

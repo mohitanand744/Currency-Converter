@@ -4,6 +4,7 @@ let fromCurrency = document.querySelector(".fromcurrency");
 let toCurrency = document.querySelector(".tocurrency");
 let convertBtn = document.querySelector(".convert-btn");
 let result = document.querySelector(".result");
+let img = document.querySelector(".img");
 
 currencies.forEach((Currency) => {
   let options = document.createElement("option");
@@ -41,4 +42,10 @@ let convertCurrency = async () => {
   }
 };
 
-convertBtn.addEventListener("click", convertCurrency);
+convertBtn.addEventListener("click", () => {
+  convertCurrency();
+  img.classList.add("rotate");
+  setTimeout(() => {
+    img.classList.remove("rotate");
+  }, 600);
+});
