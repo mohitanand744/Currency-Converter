@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #182436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #fff;
+  background: #253b75;
+  flex-wrap: wrap;
+  min-height: 80%;
+  padding: 0 1rem;
+  min-width: 70%;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 1rem 4rem;
+
+  & h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.amount-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+
+  & input {
+    flex: 1;
+    padding: 1rem 2rem;
+    font-size: 2.2rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 9px 2px inset,
+      rgba(0, 0, 0, 0.315) 0px 0px 9px 2px inset,
+      rgba(1, 31, 61, 0.301) 0px 0px 9px 2px inset;
+
+    &::placeholder {
+      color: #b4b4b4;
+    }
+  }
+}
+select {
+  padding: 1.4rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.479) 0px 0px 9px 2px inset;
+  font-size: 2rem;
+}
+
+.convert-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 4rem;
+  gap: 1.5rem;
+
+  & p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+.convert {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-contaner {
+  text-align: center;
+  margin-top: 2rem;
+}
+.convert-btn {
+  padding: 1rem 3rem;
+  background: transparent;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.705) 0px 0px 9px 2px inset;
+  font-size: 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  &:hover {
+    background: #00000031;
+  }
+  &:active {
+    scale: 0.88;
+    background: #0000009d;
+  }
+}
+
+.result-container {
+  max-width: 70%;
+  background: #0000003a;
+  box-shadow: rgba(0, 0, 0, 0.582) 0px 0px 9px 2px inset;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffff;
+}
+
+@media screen and (width < 752px) {
+  html {
+    font-size: 50.5%;
+  }
+  header {
+    & img {
+      width: 14rem;
+    }
+    & h1 {
+      font-size: 3.3rem;
+    }
+  }
+  .convert-container {
+    & img {
+      width: 8rem;
+    }
+  }
+}
+
+@media screen and (width < 568px) {
+  .amount-container {
+    padding: 0;
+  }
+  .amount-container {
+    & input {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+@media screen and (width < 468px) {
+  header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    & img {
+      width: 25rem;
+    }
+    & h1 {
+      font-size: 4.4rem;
+    }
+  }
+  .amount-container {
+    & input {
+      font-size: 2.3rem;
+    }
+  }
+  .convert-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (width < 400px) {
+  header {
+    & h1 {
+      font-size: 3.8rem;
+    }
+  }
+  .result-container {
+    & p {
+      font-size: 1.8rem;
+    }
+  }
+}
