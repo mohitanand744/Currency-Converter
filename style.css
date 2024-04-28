@@ -27,9 +27,9 @@ body {
   border: 2px solid #fff;
   background: #253b75;
   flex-wrap: wrap;
-  min-height: 80%;
-  padding: 0 1rem;
-  min-width: 70%;
+  min-height: 65%;
+  padding: 0.5rem 1rem;
+  min-width: 50%;
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
   -moz-border-radius: 3rem;
@@ -163,7 +163,7 @@ select {
 
 @media screen and (width < 752px) {
   html {
-    font-size: 50.5%;
+    font-size: 55.5%;
   }
   header {
     & img {
