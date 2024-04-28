@@ -1,4 +1,5 @@
-let apiUrl = "https://v6.exchangerate-api.com/v6/9938a6ae2b4f18570f810514/latest/USD";
+let apiUrl =
+  "https://v6.exchangerate-api.com/v6/9938a6ae2b4f18570f810514/latest/USD";
 let fromCurrency = document.querySelector(".fromcurrency");
 let toCurrency = document.querySelector(".tocurrency");
 let convertBtn = document.querySelector(".convert-btn");
@@ -36,7 +37,7 @@ let convertCurrency = async () => {
       2
     )} ${tcurrency}`;
   } else {
-    alert("Please Fill in the amount");
+    result.innerHTML = "Please Fill in the amount";
   }
 };
 
